@@ -441,7 +441,7 @@ li {
   color: var(--accent-text-color);
 }
 
-.icon {
+.icons {
   padding: 0px;
   fill: currentColor;
 }
@@ -547,8 +547,10 @@ li {
 }
 
 .footer-main {
-  width: 231px;
-  height: 81px;
+  margin-right: 70px;
+}
+
+.footer-add {
   margin-right: 70px;
 }
 
@@ -597,6 +599,11 @@ li {
     background-color: transparent;
     color: var(--hero-text-color);
     outline: transparent;
+    transition: border-color var(--anim-slow);
+}
+
+.add-to-us:focus {
+    border-color: var(--accent-text-color);
 }
 
 .add-to-us::placeholder {
@@ -885,6 +892,10 @@ li {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: transparent;
+}
+
+.textarea:focus {
+    border-color: var(--accent-text-color);
 }
 
 .terms {
